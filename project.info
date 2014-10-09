@@ -1,0 +1,23 @@
+name = project
+description = Install site for project_name
+core = 7.x
+
+; core
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = features
+
+; admin
+dependencies[] = admin_menu
+dependencies[] = admin_views
+
+; kraftwagen
+dependencies[] = kw_manifests
+
+; devel
+env_dependencies[development][] = field_ui
+env_dependencies[development][] = strongarm
+env_dependencies[development][] = devel
+env_dependencies[development][] = potx
+
+files[] = project.profile
